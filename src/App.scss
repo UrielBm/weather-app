@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+$primary: #28527a;
+$Second: #8ac4d0;
+$third: #f4d160;
+$fouth: #fbeeac;
+$black: #000;
+$white: #ffffee;
+.wrapperMain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 6rem 1rem 2rem 1rem;
+  .section {
+    flex-grow: 1;
+  }
+  .section:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.wrapperHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: $primary;
+  .wrapperNav {
+    .title {
+      font-size: 2.5rem;
+      color: $white;
+      font-weight: bolder;
+    }
+  }
+}
+.subtitle {
+  font-size: 1.7rem;
+  color: $primary;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .wrapperMain {
+    flex-direction: column;
+  }
+}

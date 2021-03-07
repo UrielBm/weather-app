@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+$primary: #28527a;
+$Second: #8ac4d0;
+$third: #f4d160;
+$fouth: #fbeeac;
+$black: #000;
+$white: #ffffee;
+.wrapperError {
+  display: flex;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: rgb(185, 0, 0);
+  margin-bottom: 1rem;
+  .parrafoError {
+    font-family: "Indie Flower", cursive;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+}

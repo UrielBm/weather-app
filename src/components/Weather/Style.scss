@@ -1,0 +1,75 @@
+$primary: #28527a;
+$Second: #8ac4d0;
+$third: #f4d160;
+$fouth: #fbeeac;
+$black: #000;
+$white: #ffffee;
+$good: #0e850a;
+$cold: #070347;
+$hot: #8a0909;
+.wrapperWeather {
+  display: flex;
+  flex-direction: column;
+  background-color: $fouth;
+  padding: 2rem;
+  box-sizing: border-box;
+  .wrapperData {
+    text-align: center;
+    .wrapperSubtitle {
+      margin-bottom: 1rem;
+    }
+    .wrapperInfo {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      .data {
+        font-size: 4rem;
+      }
+      .hot {
+        color: $hot;
+      }
+      .cold {
+        color: $cold;
+      }
+      .good {
+        color: $good;
+      }
+    }
+    .wrapperInfoExtra {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      .data {
+        font-size: 1.5rem;
+      }
+      .hot {
+        color: $hot;
+      }
+      .cold {
+        color: $cold;
+      }
+      .good {
+        color: $good;
+      }
+    }
+  }
+  .wrapperHumedad {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.1rem;
+    .text {
+      margin-right: 0.5rem;
+    }
+    .data {
+      font-size: 1.3rem;
+      color: $primary;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapperWeather {
+    width: 340px;
+  }
+}

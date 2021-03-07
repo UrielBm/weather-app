@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+$primary: #28527a;
+$Second: #8ac4d0;
+$third: #f4d160;
+$fouth: #fbeeac;
+$black: #000;
+$white: #ffffee;
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: $Second;
+  justify-content: space-around;
+  align-items: center;
+  .wrapperInput {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-transform: uppercase;
+    width: 100%;
+    .label {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .input {
+      font-family: "Indie Flower", cursive;
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      border: none;
+      background: transparent;
+      border-bottom: 0.3rem solid white;
+      box-sizing: border-box;
+      outline: none;
+      transition: background, font-size, 0.4s;
+    }
+    .input::placeholder {
+      color: $black;
+    }
+    .input:focus {
+      font-size: 1.1rem;
+      background: white;
+      border-radius: 2rem;
+    }
+    .input:focus + .label {
+      font-size: 0.9rem;
+    }
+    .select {
+      @extend .input;
+    }
+    .select:focus + .label {
+      font-size: 0.9rem;
+    }
+  }
+  .wrapperButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button {
+      font-family: "Indie Flower", cursive;
+      width: 100%;
+      background: $fouth;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      color: $black;
+      outline: none;
+      transition: background, 0.5s;
+    }
+    .button:hover {
+      background: $third;
+      font-size: 1.4rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapperForm {
+    width: 340px;
+  }
+}
