@@ -8,7 +8,7 @@ const Form = ({ search, Setsearch, Setpeticion }) => {
     const { name, value } = e.target;
     Setsearch({
       ...search,
-      [name]: value.toLowerCase(),
+      [name]: value,
     });
   };
   const handleSubmit = (e) => {
